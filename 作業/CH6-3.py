@@ -9,12 +9,13 @@ Data = [
 ]
 
 s = input("輸入查詢的姓名：")
-found = False
+
+f = False
 
 for n in Data:
     if n[0] == s:
         print(s,"電話號碼為",n[1])
-        found = True
+        f = True
         break
-if found == False:
+if f == False:
     print("查無此人的資料")
